@@ -18,7 +18,7 @@
 </header>
 <div class="styleguide-container">
   <nav class="styleguide-menu styleguide-reset">
-    <ul class="styleguide-menu-list" data-kss-ref="0">
+    <ul class="styleguide-menu-list" data-kss-ref="4">
       <li><a href="index.html">0. Overview</a></li>
       <li><a href="section-1.html">1. Panels</a></li>
       <li><a href="section-2.html">2. Text and Decoration</a></li>
@@ -30,10 +30,75 @@
 
   <div class="styleguide-content">
 
-    <div class="styleguide-markdown-body styleguide-reset">
-       <p>Generate style guide with</p>
-<pre><code>kss-node less --less less\guide.less --template template
-</code></pre>
+    <header class="example-header styleguide-reset">
+      <h1>Tables</h1>
+    </header>
+    <div class="markdown-body styleguide-reset">
+      <p>Base table</p>
+
+    </div>
+    <div class="styleguide-example">
+      <header class="styleguide-example-header styleguide-reset">
+        <h3>4.1 <em>Tables</em></h3>
+      </header>
+      <div class="styleguide-description styleguide-markdown-body styleguide-reset">
+        <p>Basic table</p>
+
+
+        <ul class="styleguide-modifier">
+        </ul>
+      </div>
+
+      <div class="styleguide-element">
+        <table class="admin-table">
+ <thead>
+   <tr>
+     <th>Column 1</th>
+     <th>Column 2</th>
+     <th>Column 3</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+     <td>Data 1</td>
+     <td>Data 2</td>
+     <td>Data 3</td>
+   </tr>
+   <tr>
+     <td>Data 1</td>
+     <td>Data 2</td>
+     <td>Data 3</td>
+   </tr>
+ </tbody>
+</table>
+      </div>
+
+
+      <div class="styleguide-html styleguide-reset">
+        <div class="styleguide-html-highlight">
+          <pre><code class="xml">&lt;table class=&quot;admin-table&quot;&gt;
+ &lt;thead&gt;
+   &lt;tr&gt;
+     &lt;th&gt;Column 1&lt;/th&gt;
+     &lt;th&gt;Column 2&lt;/th&gt;
+     &lt;th&gt;Column 3&lt;/th&gt;
+   &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+   &lt;tr&gt;
+     &lt;td&gt;Data 1&lt;/td&gt;
+     &lt;td&gt;Data 2&lt;/td&gt;
+     &lt;td&gt;Data 3&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+     &lt;td&gt;Data 1&lt;/td&gt;
+     &lt;td&gt;Data 2&lt;/td&gt;
+     &lt;td&gt;Data 3&lt;/td&gt;
+   &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+      </div>
     </div>
   </div>
 </div>

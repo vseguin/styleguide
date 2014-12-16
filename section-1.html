@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Styleguide Example</title>
+  <link rel="stylesheet" href="public/kss.css" type="text/css" />
+  <link rel="stylesheet" href="public/style.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
+  <!--[if lt IE 9]>
+  <script src="public/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body id="styleguide">
+<header class="styleguide-header styleguide-reset">
+  <div class="styleguide-container">
+    <h1>Styleguide</h1>
+  </div>
+</header>
+<div class="styleguide-container">
+  <nav class="styleguide-menu styleguide-reset">
+    <ul class="styleguide-menu-list" data-kss-ref="1">
+      <li><a href="index.html">0. Overview</a></li>
+      <li><a href="section-1.html">1. Panels</a></li>
+      <li><a href="section-2.html">2. Text and Decoration</a></li>
+      <li><a href="section-3.html">3. Buttons</a></li>
+      <li><a href="section-4.html">4. Tables</a></li>
+      <li><a href="section-5.html">5. Forms</a></li>
+    </ul>
+  </nav>
+
+  <div class="styleguide-content">
+
+    <header class="example-header styleguide-reset">
+      <h1>Panels</h1>
+    </header>
+    <div class="markdown-body styleguide-reset">
+      <p>Base panels</p>
+
+    </div>
+    <div class="styleguide-example">
+      <header class="styleguide-example-header styleguide-reset">
+        <h3>1.1 <em>Collapsable</em></h3>
+      </header>
+      <div class="styleguide-description styleguide-markdown-body styleguide-reset">
+        <p>Base styles and flexible support for collapsable components like accordions and navigation.</p>
+
+
+        <ul class="styleguide-modifier">
+        </ul>
+      </div>
+
+      <div class="styleguide-element">
+        <div class="collapsable-panel-group" id="CollapsableSettings" role="tablist" aria-multiselectable="true">
+   <div class="panel panel-default">
+       <div class="panel-heading" role="tab" id="ExampleHeading">
+           <a class="collapsed" data-toggle="collapse" data-parent="#CollapsableSettings" href="#Example" aria-expanded="false"
+              aria-controls="Example">
+               Example
+           </a>
+           <i class="toggle-icon"></i>
+       </div>
+       <div class="panel-collapse collapse" id="Example" role="tabpanel" aria-labelledby="ExampleHeading">
+           <div class="panel-body">
+               Example Content
+           </div>
+       </div>
+   </div>
+   <div class="panel panel-source">
+       <div class="panel-heading" role="tab" id="SecuritySettingsHeading">
+           <a class="collapsed" data-toggle="collapse" data-parent="#CollapsableSettings" href="#SecuritySettings"
+              aria-expanded="false" aria-controls="SecuritySettings">
+               Authentication
+           </a>
+           <i class="toggle-icon"></i>
+       </div>
+       <div class="panel-collapse collapse" id="SecuritySettings" role="tabpanel" aria-labelledby="SecuritySettingsHeading">
+           <div class="panel-body">
+               <form>
+                   <div class="coveo-form">
+                       <div class="form-group">
+                           <label for="field1">
+                               Field 1
+                           </label>
+                           <div class="value">
+                               <input type="text" name="field1" id="field1" placeholder="Field 1" value="Field 1">
+                           </div>
+                       </div>
+                       <div class="form-group input-validation-error">
+                           <label for="field2">
+                               Field 2
+                           </label>
+                           <div class="value validated-input">
+                               <input type="text" name="field2" id="field2" placeholder="Field 2">
+                               <div class="input-validation-error-details">
+                                   <i class="coveo-sprites-misc-alert"></i>
+                                   <span class="input-validation-error-message">Error message goes here!</span>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </form>
+           </div>
+       </div>
+   </div>
+</div>
+      </div>
+
+
+      <div class="styleguide-html styleguide-reset">
+        <div class="styleguide-html-highlight">
+          <pre><code class="xml">&lt;div class=&quot;collapsable-panel-group&quot; id=&quot;CollapsableSettings&quot; role=&quot;tablist&quot; aria-multiselectable=&quot;true&quot;&gt;
+   &lt;div class=&quot;panel panel-default&quot;&gt;
+       &lt;div class=&quot;panel-heading&quot; role=&quot;tab&quot; id=&quot;ExampleHeading&quot;&gt;
+           &lt;a class=&quot;collapsed&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#CollapsableSettings&quot; href=&quot;#Example&quot; aria-expanded=&quot;false&quot;
+              aria-controls=&quot;Example&quot;&gt;
+               Example
+           &lt;/a&gt;
+           &lt;i class=&quot;toggle-icon&quot;&gt;&lt;/i&gt;
+       &lt;/div&gt;
+       &lt;div class=&quot;panel-collapse collapse&quot; id=&quot;Example&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;ExampleHeading&quot;&gt;
+           &lt;div class=&quot;panel-body&quot;&gt;
+               Example Content
+           &lt;/div&gt;
+       &lt;/div&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;panel panel-source&quot;&gt;
+       &lt;div class=&quot;panel-heading&quot; role=&quot;tab&quot; id=&quot;SecuritySettingsHeading&quot;&gt;
+           &lt;a class=&quot;collapsed&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#CollapsableSettings&quot; href=&quot;#SecuritySettings&quot;
+              aria-expanded=&quot;false&quot; aria-controls=&quot;SecuritySettings&quot;&gt;
+               Authentication
+           &lt;/a&gt;
+           &lt;i class=&quot;toggle-icon&quot;&gt;&lt;/i&gt;
+       &lt;/div&gt;
+       &lt;div class=&quot;panel-collapse collapse&quot; id=&quot;SecuritySettings&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;SecuritySettingsHeading&quot;&gt;
+           &lt;div class=&quot;panel-body&quot;&gt;
+               &lt;form&gt;
+                   &lt;div class=&quot;coveo-form&quot;&gt;
+                       &lt;div class=&quot;form-group&quot;&gt;
+                           &lt;label for=&quot;field1&quot;&gt;
+                               Field 1
+                           &lt;/label&gt;
+                           &lt;div class=&quot;value&quot;&gt;
+                               &lt;input type=&quot;text&quot; name=&quot;field1&quot; id=&quot;field1&quot; placeholder=&quot;Field 1&quot; value=&quot;Field 1&quot;&gt;
+                           &lt;/div&gt;
+                       &lt;/div&gt;
+                       &lt;div class=&quot;form-group input-validation-error&quot;&gt;
+                           &lt;label for=&quot;field2&quot;&gt;
+                               Field 2
+                           &lt;/label&gt;
+                           &lt;div class=&quot;value validated-input&quot;&gt;
+                               &lt;input type=&quot;text&quot; name=&quot;field2&quot; id=&quot;field2&quot; placeholder=&quot;Field 2&quot;&gt;
+                               &lt;div class=&quot;input-validation-error-details&quot;&gt;
+                                   &lt;i class=&quot;coveo-sprites-misc-alert&quot;&gt;&lt;/i&gt;
+                                   &lt;span class=&quot;input-validation-error-message&quot;&gt;Error message goes here!&lt;/span&gt;
+                               &lt;/div&gt;
+                           &lt;/div&gt;
+                       &lt;/div&gt;
+                   &lt;/div&gt;
+               &lt;/form&gt;
+           &lt;/div&gt;
+       &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="styleguide-footer styleguide-reset styleguide-container">
+  <p>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a>.</p>
+  <p>Designed by <a href="https://github.com/">GitHub</a> , <a href="http://warpspire.com/">Kyle Neath</a>. Adjusted by 1026</p>
+</footer>
+<script src="public/kss.js"></script>
+<script src="public/jquery-1.10.2.min.js"></script>
+<script src="public/styleguide.js"></script>
+<script src="../js/transition.js"></script>
+<script src="../js/collapse.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+</body>
+</html>

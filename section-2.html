@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Styleguide Example</title>
+  <link rel="stylesheet" href="public/kss.css" type="text/css" />
+  <link rel="stylesheet" href="public/style.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
+  <!--[if lt IE 9]>
+  <script src="public/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body id="styleguide">
+<header class="styleguide-header styleguide-reset">
+  <div class="styleguide-container">
+    <h1>Styleguide</h1>
+  </div>
+</header>
+<div class="styleguide-container">
+  <nav class="styleguide-menu styleguide-reset">
+    <ul class="styleguide-menu-list" data-kss-ref="2">
+      <li><a href="index.html">0. Overview</a></li>
+      <li><a href="section-1.html">1. Panels</a></li>
+      <li><a href="section-2.html">2. Text and Decoration</a></li>
+      <li><a href="section-3.html">3. Buttons</a></li>
+      <li><a href="section-4.html">4. Tables</a></li>
+      <li><a href="section-5.html">5. Forms</a></li>
+    </ul>
+  </nav>
+
+  <div class="styleguide-content">
+
+    <header class="example-header styleguide-reset">
+      <h1>Text and Decoration</h1>
+    </header>
+    <div class="markdown-body styleguide-reset">
+      <p>Base text style and decoration</p>
+
+    </div>
+    <div class="styleguide-example">
+      <header class="styleguide-example-header styleguide-reset">
+        <h3>2.1 <em>Headings</em></h3>
+      </header>
+      <div class="styleguide-description styleguide-markdown-body styleguide-reset">
+        <p>Admin HTML headings</p>
+
+
+        <ul class="styleguide-modifier">
+        </ul>
+      </div>
+
+      <div class="styleguide-element">
+        <h1>Admin heading</h1>
+<h2>Admin heading</h2>
+<h3>Admin heading</h3>
+<h4>Admin heading</h4>
+<h5>Admin heading</h5>
+<h6>Admin heading</h6>
+      </div>
+
+
+      <div class="styleguide-html styleguide-reset">
+        <div class="styleguide-html-highlight">
+          <pre><code class="xml">&lt;h1&gt;Admin heading&lt;/h1&gt;
+&lt;h2&gt;Admin heading&lt;/h2&gt;
+&lt;h3&gt;Admin heading&lt;/h3&gt;
+&lt;h4&gt;Admin heading&lt;/h4&gt;
+&lt;h5&gt;Admin heading&lt;/h5&gt;
+&lt;h6&gt;Admin heading&lt;/h6&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="styleguide-example">
+      <header class="styleguide-example-header styleguide-reset">
+        <h3>2.2 <em>Users labels</em></h3>
+      </header>
+      <div class="styleguide-description styleguide-markdown-body styleguide-reset">
+        <p>Labels for users types</p>
+
+
+        <ul class="styleguide-modifier">
+        </ul>
+      </div>
+
+      <div class="styleguide-element">
+        <span class="user-type user-admin">admin</span>
+<span class="user-type user-user">user</span>
+<span class="user-type user-role_uareader">usage analyst</span>
+<span class="user-type user-role_rankingeditor">relevance analyst</span>
+<span class="user-type user-owner">owner</span>
+<span class="user-type user-ops">ops</span>
+      </div>
+
+
+      <div class="styleguide-html styleguide-reset">
+        <div class="styleguide-html-highlight">
+          <pre><code class="xml">&lt;span class=&quot;user-type user-admin&quot;&gt;admin&lt;/span&gt;
+&lt;span class=&quot;user-type user-user&quot;&gt;user&lt;/span&gt;
+&lt;span class=&quot;user-type user-role_uareader&quot;&gt;usage analyst&lt;/span&gt;
+&lt;span class=&quot;user-type user-role_rankingeditor&quot;&gt;relevance analyst&lt;/span&gt;
+&lt;span class=&quot;user-type user-owner&quot;&gt;owner&lt;/span&gt;
+&lt;span class=&quot;user-type user-ops&quot;&gt;ops&lt;/span&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="styleguide-example">
+      <header class="styleguide-example-header styleguide-reset">
+        <h3>2.3 <em>Organizations label</em></h3>
+      </header>
+      <div class="styleguide-description styleguide-markdown-body styleguide-reset">
+        <p>Labels for license types</p>
+
+
+        <ul class="styleguide-modifier">
+        </ul>
+      </div>
+
+      <div class="styleguide-element">
+        <span class="organization-type STANDARD-label">STANDARD</span>
+<span class="organization-type SANDBOX-label">SANDBOX</span>
+<span class="organization-type INTERNAL-label">INTERNAL</span>
+<span class="organization-type DEMO-label">DEMO</span>
+<span class="organization-type TRIAL-label">TRIAL</span>
+<span class="organization-type FREE-label">FREE</span>
+<span class="organization-type ua-only-label">ua only</span>
+      </div>
+
+
+      <div class="styleguide-html styleguide-reset">
+        <div class="styleguide-html-highlight">
+          <pre><code class="xml">&lt;span class=&quot;organization-type STANDARD-label&quot;&gt;STANDARD&lt;/span&gt;
+&lt;span class=&quot;organization-type SANDBOX-label&quot;&gt;SANDBOX&lt;/span&gt;
+&lt;span class=&quot;organization-type INTERNAL-label&quot;&gt;INTERNAL&lt;/span&gt;
+&lt;span class=&quot;organization-type DEMO-label&quot;&gt;DEMO&lt;/span&gt;
+&lt;span class=&quot;organization-type TRIAL-label&quot;&gt;TRIAL&lt;/span&gt;
+&lt;span class=&quot;organization-type FREE-label&quot;&gt;FREE&lt;/span&gt;
+&lt;span class=&quot;organization-type ua-only-label&quot;&gt;ua only&lt;/span&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="styleguide-footer styleguide-reset styleguide-container">
+  <p>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a>.</p>
+  <p>Designed by <a href="https://github.com/">GitHub</a> , <a href="http://warpspire.com/">Kyle Neath</a>. Adjusted by 1026</p>
+</footer>
+<script src="public/kss.js"></script>
+<script src="public/jquery-1.10.2.min.js"></script>
+<script src="public/styleguide.js"></script>
+<script src="../js/transition.js"></script>
+<script src="../js/collapse.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+</body>
+</html>
