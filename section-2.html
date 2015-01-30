@@ -6,7 +6,7 @@
     <title>Coveo Styleguide</title>
     <meta name="description" content=""/>
     <meta name="generator" content="kss-node"/>
-    <link rel="stylesheet" href="lib/css/reset.css"/>
+    <link rel="stylesheet" href="public/reset.css"/>
     <link rel="stylesheet" href="public/kss.css"/>
     <link rel="stylesheet" href="public/style.css"/>
     <!--[if lt IE 9]>
@@ -57,27 +57,79 @@
             <section id="section-2.1" class="kss-section kss-depth-2">
                 <h1 class="kss-title"><span class="kss-ref">2.1</span> Headings</h1>
                 <div class="kss-description">
-                    <p>Admin HTML headings</p>
+                    <p>Admin HTML headings
+Use modifiers instead of <code>font-weight</code> for crispier fonts.</p>
 
                 </div>
                 <div class="kss-modifier-block">
                     <div class="kss-modifier kss-modifier-original">
                         <div class="kss-modifier-example">
-                            <h1>Admin heading</h1>
-<h2>Admin heading</h2>
-<h3>Admin heading</h3>
-<h4>Admin heading</h4>
-<h5>Admin heading</h5>
-<h6>Admin heading</h6>
+                            <h1 class="{$modifiers}">Admin heading</h1>
+<h2 class="{$modifiers}">Admin heading</h2>
+<h3 class="{$modifiers}">Admin heading</h3>
+<h4 class="{$modifiers}">Admin heading</h4>
+<h5 class="{$modifiers}">Admin heading</h5>
+<h6 class="{$modifiers}">Admin heading</h6>
+                        </div>
+                    </div>
+                    <div class="kss-modifier">
+                        <div class="kss-modifier-head">
+                            <div class="kss-modifier-name">.light</div>
+                            <div class="kss-modifier-description">
+                                <p>Light font</p>
+
+                            </div>
+                        </div>
+                        <div class="kss-modifier-example">
+                            <h1 class="light">Admin heading</h1>
+<h2 class="light">Admin heading</h2>
+<h3 class="light">Admin heading</h3>
+<h4 class="light">Admin heading</h4>
+<h5 class="light">Admin heading</h5>
+<h6 class="light">Admin heading</h6>
+                        </div>
+                    </div>
+                    <div class="kss-modifier">
+                        <div class="kss-modifier-head">
+                            <div class="kss-modifier-name">.semibold</div>
+                            <div class="kss-modifier-description">
+                                <p>Semi bold font</p>
+
+                            </div>
+                        </div>
+                        <div class="kss-modifier-example">
+                            <h1 class="semibold">Admin heading</h1>
+<h2 class="semibold">Admin heading</h2>
+<h3 class="semibold">Admin heading</h3>
+<h4 class="semibold">Admin heading</h4>
+<h5 class="semibold">Admin heading</h5>
+<h6 class="semibold">Admin heading</h6>
+                        </div>
+                    </div>
+                    <div class="kss-modifier">
+                        <div class="kss-modifier-head">
+                            <div class="kss-modifier-name">.bold</div>
+                            <div class="kss-modifier-description">
+                                <p>Bold font</p>
+
+                            </div>
+                        </div>
+                        <div class="kss-modifier-example">
+                            <h1 class="bold">Admin heading</h1>
+<h2 class="bold">Admin heading</h2>
+<h3 class="bold">Admin heading</h3>
+<h4 class="bold">Admin heading</h4>
+<h5 class="bold">Admin heading</h5>
+<h6 class="bold">Admin heading</h6>
                         </div>
                     </div>
                     <div class="kss-markup">
-                        <pre><code data-language="html">&lt;h1&gt;Admin heading&lt;/h1&gt;
-&lt;h2&gt;Admin heading&lt;/h2&gt;
-&lt;h3&gt;Admin heading&lt;/h3&gt;
-&lt;h4&gt;Admin heading&lt;/h4&gt;
-&lt;h5&gt;Admin heading&lt;/h5&gt;
-&lt;h6&gt;Admin heading&lt;/h6&gt;</code></pre>
+                        <pre><code data-language="html">&lt;h1 class=&quot;{$modifiers}&quot;&gt;Admin heading&lt;/h1&gt;
+&lt;h2 class=&quot;{$modifiers}&quot;&gt;Admin heading&lt;/h2&gt;
+&lt;h3 class=&quot;{$modifiers}&quot;&gt;Admin heading&lt;/h3&gt;
+&lt;h4 class=&quot;{$modifiers}&quot;&gt;Admin heading&lt;/h4&gt;
+&lt;h5 class=&quot;{$modifiers}&quot;&gt;Admin heading&lt;/h5&gt;
+&lt;h6 class=&quot;{$modifiers}&quot;&gt;Admin heading&lt;/h6&gt;</code></pre>
                     </div>
                 </div>
             </section>
@@ -147,11 +199,10 @@
 </div>
 <script src="public/kss.js"></script>
 <script src="public/jquery-1.11.2.min.js"></script>
+<script src="public/main.js"></script>
+<script src="js/CoveoStyleGuide.Dependencies.js"></script>
 <!--[if gt IE 8]><!-->
 <script src="public/rainbow.min.js"></script>
 <!--<![endif]-->
-<script src="lib/js/collapse.js"></script>
-<script src="lib/js/transition.js"></script>
-<script src="public/main.js"></script>
 </body>
 </html>

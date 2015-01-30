@@ -6,7 +6,7 @@
     <title>Coveo Styleguide</title>
     <meta name="description" content=""/>
     <meta name="generator" content="kss-node"/>
-    <link rel="stylesheet" href="lib/css/reset.css"/>
+    <link rel="stylesheet" href="public/reset.css"/>
     <link rel="stylesheet" href="public/kss.css"/>
     <link rel="stylesheet" href="public/style.css"/>
     <!--[if lt IE 9]>
@@ -40,9 +40,37 @@
     <div class="kss-content">
         <article class="kss-article">
             <section id="section-0" class="kss-section kss-overview">
-                 <p>Generate style guide with</p>
-<pre><code>kss-node less --less less\guide.less --template template
-</code></pre>
+                 <p><a href="https://david-dm.org/Coveo/styleguide"><img src="https://david-dm.org/Coveo/styleguide.svg?style=flat-square" alt="Dependency Status"></a>
+<a href="https://david-dm.org/Coveo/styleguide#info=devDependencies"><img src="https://david-dm.org/Coveo/styleguide/dev-status.svg?style=flat-square" alt="devDependency Status"></a></p>
+<h1 id="coveo-ui-styleguide">Coveo UI StyleGuide</h1>
+<p>Coveo StyleGuide is a collection of UI components used in Coveo&#39;s Cloud Services administration console.
+All components and their documentation is <a href="http://source.coveo.com/styleguide/">available here</a>
+Source code is <a href="https://github.com/Coveo/styleguide">available on GitHub</a></p>
+<p>It is widely inspired by <a href="https://github.com/twbs/bootstrap">Bootstrap 3.0</a> and borrows some of it components.</p>
+<p>The project is at it&#39;s early stages, some components can still have <em>lots</em> of breaking changes.</p>
+<h1 id="compiling">Compiling</h1>
+<p>Make sure you have Node JS and NPM installed.
+Run <code>npm install</code>, then <code>npm run compile</code>.
+The compiled styleguide will be available in the <code>/styleguide</code> folder.</p>
+<h1 id="license">License</h1>
+<p>Coveo StyleGuide is distributed under MIT license.</p>
+<p>Copyright (c) 2015 Coveo</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the &quot;Software&quot;),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.</p>
+
             </section>
         </article>
         <footer class="kss-footer">
@@ -52,14 +80,12 @@
         </footer>
     </div>
 </div>
-
 <script src="public/kss.js"></script>
 <script src="public/jquery-1.11.2.min.js"></script>
+<script src="public/main.js"></script>
+<script src="js/CoveoStyleGuide.Dependencies.js"></script>
 <!--[if gt IE 8]><!-->
 <script src="public/rainbow.min.js"></script>
 <!--<![endif]-->
-<script src="lib/js/collapse.js"></script>
-<script src="lib/js/transition.js"></script>
-<script src="public/main.js"></script>
 </body>
 </html>
