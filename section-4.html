@@ -6,7 +6,6 @@
     <title>Coveo Styleguide</title>
     <meta name="description" content=""/>
     <meta name="generator" content="kss-node"/>
-    <link rel="stylesheet" href="public/reset.css"/>
     <link rel="stylesheet" href="public/kss.css"/>
     <link rel="stylesheet" href="public/style.css"/>
     <!--[if lt IE 9]>
@@ -33,6 +32,8 @@
                     <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span
                             class="kss-name">Tables</span></a></li>
                     <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span
+                            class="kss-name">Controls</span></a></li>
+                    <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span
                             class="kss-name">Forms</span></a></li>
                 </ul>
                 <ul class="kss-menu-child">
@@ -60,21 +61,51 @@
                 <div class="kss-modifier-block">
                     <div class="kss-modifier kss-modifier-original">
                         <div class="kss-modifier-example">
-                            <table class="admin-table">
+                            <table>
  <thead>
    <tr>
-     <th>Column 1</th>
+     <th class="selection">
+       <label class="coveo-checkbox-label">
+         <input type="checkbox" class="coveo-checkbox">
+         <button title="Select All" type="button"/>
+       </label>
+     </th>
+     <th class="admin-sort">
+       <div class="admin-sort-icon">
+         <i class="coveo-sprites-tables-sort_asc"></i>
+         <i class="coveo-sprites-tables-sort_desc"></i>
+       </div>
+       Column 1
+     </th>
      <th>Column 2</th>
-     <th>Column 3</th>
+     <th class="admin-sort">
+       <div class="admin-sort-icon">
+         <i class="coveo-sprites-tables-sort_asc"></i>
+         <i class="coveo-sprites-tables-sort_desc"></i>
+       </div>
+       Column 3
+     </th>
    </tr>
  </thead>
  <tbody>
    <tr>
+     <td class="selection">
+       <label class="coveo-checkbox-label">
+         <input id="main-checkbox" type="checkbox" class="coveo-checkbox">
+         <button type="button"></button>
+       </label>
+     </td>
      <td>Data 1</td>
      <td>Data 2</td>
      <td>Data 3</td>
    </tr>
    <tr>
+     <td class="selection">
+       <label class="coveo-checkbox-label">
+         <input id="main-checkbox" type="checkbox" class="coveo-checkbox">
+         <button type="button"></button>
+       </label>
+     </td>
      <td>Data 1</td>
      <td>Data 2</td>
      <td>Data 3</td>
@@ -84,21 +115,51 @@
                         </div>
                     </div>
                     <div class="kss-markup">
-                        <pre><code data-language="html">&lt;table class=&quot;admin-table&quot;&gt;
+                        <pre><code data-language="html">&lt;table&gt;
  &lt;thead&gt;
    &lt;tr&gt;
-     &lt;th&gt;Column 1&lt;/th&gt;
+     &lt;th class=&quot;selection&quot;&gt;
+       &lt;label class=&quot;coveo-checkbox-label&quot;&gt;
+         &lt;input type=&quot;checkbox&quot; class=&quot;coveo-checkbox&quot;&gt;
+         &lt;button title=&quot;Select All&quot; type=&quot;button&quot;/&gt;
+       &lt;/label&gt;
+     &lt;/th&gt;
+     &lt;th class=&quot;admin-sort&quot;&gt;
+       &lt;div class=&quot;admin-sort-icon&quot;&gt;
+         &lt;i class=&quot;coveo-sprites-tables-sort_asc&quot;&gt;&lt;/i&gt;
+         &lt;i class=&quot;coveo-sprites-tables-sort_desc&quot;&gt;&lt;/i&gt;
+       &lt;/div&gt;
+       Column 1
+     &lt;/th&gt;
      &lt;th&gt;Column 2&lt;/th&gt;
-     &lt;th&gt;Column 3&lt;/th&gt;
+     &lt;th class=&quot;admin-sort&quot;&gt;
+       &lt;div class=&quot;admin-sort-icon&quot;&gt;
+         &lt;i class=&quot;coveo-sprites-tables-sort_asc&quot;&gt;&lt;/i&gt;
+         &lt;i class=&quot;coveo-sprites-tables-sort_desc&quot;&gt;&lt;/i&gt;
+       &lt;/div&gt;
+       Column 3
+     &lt;/th&gt;
    &lt;/tr&gt;
  &lt;/thead&gt;
  &lt;tbody&gt;
    &lt;tr&gt;
+     &lt;td class=&quot;selection&quot;&gt;
+       &lt;label class=&quot;coveo-checkbox-label&quot;&gt;
+         &lt;input id=&quot;main-checkbox&quot; type=&quot;checkbox&quot; class=&quot;coveo-checkbox&quot;&gt;
+         &lt;button type=&quot;button&quot;&gt;&lt;/button&gt;
+       &lt;/label&gt;
+     &lt;/td&gt;
      &lt;td&gt;Data 1&lt;/td&gt;
      &lt;td&gt;Data 2&lt;/td&gt;
      &lt;td&gt;Data 3&lt;/td&gt;
    &lt;/tr&gt;
    &lt;tr&gt;
+     &lt;td class=&quot;selection&quot;&gt;
+       &lt;label class=&quot;coveo-checkbox-label&quot;&gt;
+         &lt;input id=&quot;main-checkbox&quot; type=&quot;checkbox&quot; class=&quot;coveo-checkbox&quot;&gt;
+         &lt;button type=&quot;button&quot;&gt;&lt;/button&gt;
+       &lt;/label&gt;
+     &lt;/td&gt;
      &lt;td&gt;Data 1&lt;/td&gt;
      &lt;td&gt;Data 2&lt;/td&gt;
      &lt;td&gt;Data 3&lt;/td&gt;

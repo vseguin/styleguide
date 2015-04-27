@@ -6,7 +6,6 @@
     <title>Coveo Styleguide</title>
     <meta name="description" content=""/>
     <meta name="generator" content="kss-node"/>
-    <link rel="stylesheet" href="public/reset.css"/>
     <link rel="stylesheet" href="public/kss.css"/>
     <link rel="stylesheet" href="public/style.css"/>
     <!--[if lt IE 9]>
@@ -33,6 +32,8 @@
                     <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span
                             class="kss-name">Tables</span></a></li>
                     <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span
+                            class="kss-name">Controls</span></a></li>
+                    <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span
                             class="kss-name">Forms</span></a></li>
                 </ul>
                 <ul class="kss-menu-child">
@@ -44,10 +45,12 @@
                             class="kss-name">Checkboxes</span></a></li>
                     <li class="kss-menu-item"><a href="#section-5.4"><span class="kss-ref">5.4</span><span
                             class="kss-name">Slide Toggle</span></a></li>
+                    <li class="kss-menu-item"><a href="#section-5.4"><span class="kss-ref">5.4</span><span
+                            class="kss-name">Slide Toggle Boxed</span></a></li>
                     <li class="kss-menu-item"><a href="#section-5.5"><span class="kss-ref">5.5</span><span
                             class="kss-name">Slide Toggle Double</span></a></li>
                     <li class="kss-menu-item"><a href="#section-5.6"><span class="kss-ref">5.6</span><span
-                            class="kss-name">Table form</span></a></li>
+                            class="kss-name">Filter box</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -55,9 +58,9 @@
     <div class="kss-content">
         <article class="kss-article">
             <section id="section-5" class="kss-section kss-depth-1">
-                <h1 class="kss-title"><span class="kss-ref">5</span> Forms</h1>
+                <h1 class="kss-title"><span class="kss-ref">5</span> Controls</h1>
                 <div class="kss-description">
-                    <p>Covers styles used for forms, such as the <code>&lt;input&gt;</code> and <code>&lt;select&gt;</code> elements.</p>
+                    <p>Covers base controls used in forms or outside forms.</p>
 
                 </div>
             </section>
@@ -142,7 +145,7 @@
                         <div class="kss-modifier-example">
                             <label class="coveo-checkbox-label">
   <input type="checkbox" class="coveo-checkbox {$modifiers}">
-  <span></span>
+  <button></button>
 </label>
                         </div>
                     </div>
@@ -157,13 +160,13 @@
                         <div class="kss-modifier-example">
                             <label class="coveo-checkbox-label">
   <input type="checkbox" class="coveo-checkbox pseudo-class-checked">
-  <span></span>
+  <button></button>
 </label>
                         </div>
                     </div>
                     <div class="kss-modifier">
                         <div class="kss-modifier-head">
-                            <div class="kss-modifier-name">.indeterminate</div>
+                            <div class="kss-modifier-name">:indeterminate</div>
                             <div class="kss-modifier-description">
                                 <p>Checkbox state is indeterminate</p>
 
@@ -171,8 +174,8 @@
                         </div>
                         <div class="kss-modifier-example">
                             <label class="coveo-checkbox-label">
-  <input type="checkbox" class="coveo-checkbox indeterminate">
-  <span></span>
+  <input type="checkbox" class="coveo-checkbox pseudo-class-indeterminate">
+  <button></button>
 </label>
                         </div>
                     </div>
@@ -187,14 +190,14 @@
                         <div class="kss-modifier-example">
                             <label class="coveo-checkbox-label">
   <input type="checkbox" class="coveo-checkbox pseudo-class-disabled">
-  <span></span>
+  <button></button>
 </label>
                         </div>
                     </div>
                     <div class="kss-markup">
                         <pre><code data-language="html">&lt;label class=&quot;coveo-checkbox-label&quot;&gt;
   &lt;input type=&quot;checkbox&quot; class=&quot;coveo-checkbox {$modifiers}&quot;&gt;
-  &lt;span&gt;&lt;/span&gt;
+  &lt;button&gt;&lt;/button&gt;
 &lt;/label&gt;</code></pre>
                     </div>
                 </div>
@@ -202,7 +205,7 @@
             <section id="section-5.4" class="kss-section kss-depth-2">
                 <h1 class="kss-title"><span class="kss-ref">5.4</span> Slide Toggle</h1>
                 <div class="kss-description">
-                    <p>Another style for a checkbox with stylish animations. Compatible IE9+.</p>
+                    <p>Another style for a checkbox with stylish animations.</p>
 
                 </div>
                 <div class="kss-modifier-block">
@@ -210,7 +213,7 @@
                         <div class="kss-modifier-example">
                             <label class="coveo-slide-toggle-label">
   <input type="checkbox" class="coveo-slide-toggle {$modifiers}">
-  <span></span>
+  <button></button>
   <span class="toggle-label">Simple text</span>
 </label>
                         </div>
@@ -226,7 +229,7 @@
                         <div class="kss-modifier-example">
                             <label class="coveo-slide-toggle-label">
   <input type="checkbox" class="coveo-slide-toggle pseudo-class-checked">
-  <span></span>
+  <button></button>
   <span class="toggle-label">Simple text</span>
 </label>
                         </div>
@@ -242,7 +245,7 @@
                         <div class="kss-modifier-example">
                             <label class="coveo-slide-toggle-label">
   <input type="checkbox" class="coveo-slide-toggle pseudo-class-disabled">
-  <span></span>
+  <button></button>
   <span class="toggle-label">Simple text</span>
 </label>
                         </div>
@@ -250,8 +253,43 @@
                     <div class="kss-markup">
                         <pre><code data-language="html">&lt;label class=&quot;coveo-slide-toggle-label&quot;&gt;
   &lt;input type=&quot;checkbox&quot; class=&quot;coveo-slide-toggle {$modifiers}&quot;&gt;
-  &lt;span&gt;&lt;/span&gt;
+  &lt;button&gt;&lt;/button&gt;
   &lt;span class=&quot;toggle-label&quot;&gt;Simple text&lt;/span&gt;
+&lt;/label&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section id="section-5.4" class="kss-section kss-depth-2">
+                <h1 class="kss-title"><span class="kss-ref">5.4</span> Slide Toggle Boxed</h1>
+                <div class="kss-description">
+                    <p>Same as the slide toggle, but with a box.</p>
+
+                </div>
+                <div class="kss-modifier-block">
+                    <div class="kss-modifier kss-modifier-original">
+                        <div class="kss-modifier-example">
+                            <label class="coveo-slide-toggle-label boxed">
+  <span class="toggle-label">Simple text</span>
+  <input type="checkbox" class="coveo-slide-toggle">
+  <button></button>
+</label>
+<label class="coveo-slide-toggle-label boxed">
+  <span class="toggle-label">Simple text</span>
+  <input type="checkbox" class="coveo-slide-toggle">
+  <button></button>
+</label>
+                        </div>
+                    </div>
+                    <div class="kss-markup">
+                        <pre><code data-language="html">&lt;label class=&quot;coveo-slide-toggle-label boxed&quot;&gt;
+  &lt;span class=&quot;toggle-label&quot;&gt;Simple text&lt;/span&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;coveo-slide-toggle&quot;&gt;
+  &lt;button&gt;&lt;/button&gt;
+&lt;/label&gt;
+&lt;label class=&quot;coveo-slide-toggle-label boxed&quot;&gt;
+  &lt;span class=&quot;toggle-label&quot;&gt;Simple text&lt;/span&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;coveo-slide-toggle&quot;&gt;
+  &lt;button&gt;&lt;/button&gt;
 &lt;/label&gt;</code></pre>
                     </div>
                 </div>
@@ -310,171 +348,29 @@
                 </div>
             </section>
             <section id="section-5.6" class="kss-section kss-depth-2">
-                <h1 class="kss-title"><span class="kss-ref">5.6</span> Table form</h1>
+                <h1 class="kss-title"><span class="kss-ref">5.6</span> Filter box</h1>
                 <div class="kss-description">
-                    <p>Aligned form. Use as a <code>table</code> or as a <code>form</code>. Prefer <code>form</code>. Table is for legacy purpose only.</p>
+                    <p>Basic filter box.</p>
 
                 </div>
                 <div class="kss-modifier-block">
                     <div class="kss-modifier kss-modifier-original">
                         <div class="kss-modifier-example">
-                            <form>
-   <div class="coveo-form">
-       <table>
-           <tbody>
-           <tr>
-               <th>Field 1</th>
-               <td>
-                   <div>
-                       <input type="text" name="field1" placeholder="Field 1" value="Field 1">
-                   </div>
-               </td>
-           </tr>
-           <tr>
-               <th>Field 2</th>
-               <td>
-                   <div class="validated-input">
-                       <input type="text" name="field2" placeholder="Field 2">
-                   </div>
-                   <div class="input-validation-error-details">
-                       <i class="coveo-sprites-misc-alert"></i>
-                       <span class="input-validation-error-message">Error message goes here!</span>
-                   </div>
-               </td>
-           </tr>
-           <tr class="input-validation-error">
-               <th>Field 3</th>
-               <td>
-                   <div class="validated-input">
-                       <input type="text" name="field3" placeholder="Field 3">
-                   </div>
-                   <div class="input-validation-error-details">
-                       <i class="coveo-sprites-misc-alert"></i>
-                       <span class="input-validation-error-message">Error message goes here!</span>
-                   </div>
-               </td>
-           </tr>
-           </tbody>
-       </table>
-   </div>
-</form>
-<br/>
-<form>
-   <div class="coveo-form">
-       <div class="form-group">
-           <label for="field1">
-               Field 1
-           </label>
-           <div class="value">
-               <input type="text" name="field1" placeholder="Field 1" value="Field 1">
-           </div>
-       </div>
-       <div class="form-group">
-           <label for="field2">
-               Field 2
-           </label>
-           <div class="value validated-input">
-               <input type="text" name="field2" placeholder="Field 2">
-               <div class="input-validation-error-details">
-                   <i class="coveo-sprites-misc-alert"></i>
-                   <span class="input-validation-error-message">Error message goes here!</span>
-               </div>
-           </div>
-       </div>
-       <div class="form-group input-validation-error">
-           <label for="field3">
-               Field 3
-           </label>
-           <div class="value validated-input">
-               <input type="text" name="field3" placeholder="Field 3">
-               <div class="input-validation-error-details">
-                   <i class="coveo-sprites-misc-alert"></i>
-                   <span class="input-validation-error-message">Error message goes here!</span>
-               </div>
-           </div>
-       </div>
-   </div>
-</form>
+                            <div class="filter-container pull-right">
+ <span class="filter">
+     <i class="coveo-sprites-misc-filter"></i>
+ </span>
+ <input type="text" class="filterBox">
+</div>
                         </div>
                     </div>
                     <div class="kss-markup">
-                        <pre><code data-language="html">&lt;form&gt;
-   &lt;div class=&quot;coveo-form&quot;&gt;
-       &lt;table&gt;
-           &lt;tbody&gt;
-           &lt;tr&gt;
-               &lt;th&gt;Field 1&lt;/th&gt;
-               &lt;td&gt;
-                   &lt;div&gt;
-                       &lt;input type=&quot;text&quot; name=&quot;field1&quot; placeholder=&quot;Field 1&quot; value=&quot;Field 1&quot;&gt;
-                   &lt;/div&gt;
-               &lt;/td&gt;
-           &lt;/tr&gt;
-           &lt;tr&gt;
-               &lt;th&gt;Field 2&lt;/th&gt;
-               &lt;td&gt;
-                   &lt;div class=&quot;validated-input&quot;&gt;
-                       &lt;input type=&quot;text&quot; name=&quot;field2&quot; placeholder=&quot;Field 2&quot;&gt;
-                   &lt;/div&gt;
-                   &lt;div class=&quot;input-validation-error-details&quot;&gt;
-                       &lt;i class=&quot;coveo-sprites-misc-alert&quot;&gt;&lt;/i&gt;
-                       &lt;span class=&quot;input-validation-error-message&quot;&gt;Error message goes here!&lt;/span&gt;
-                   &lt;/div&gt;
-               &lt;/td&gt;
-           &lt;/tr&gt;
-           &lt;tr class=&quot;input-validation-error&quot;&gt;
-               &lt;th&gt;Field 3&lt;/th&gt;
-               &lt;td&gt;
-                   &lt;div class=&quot;validated-input&quot;&gt;
-                       &lt;input type=&quot;text&quot; name=&quot;field3&quot; placeholder=&quot;Field 3&quot;&gt;
-                   &lt;/div&gt;
-                   &lt;div class=&quot;input-validation-error-details&quot;&gt;
-                       &lt;i class=&quot;coveo-sprites-misc-alert&quot;&gt;&lt;/i&gt;
-                       &lt;span class=&quot;input-validation-error-message&quot;&gt;Error message goes here!&lt;/span&gt;
-                   &lt;/div&gt;
-               &lt;/td&gt;
-           &lt;/tr&gt;
-           &lt;/tbody&gt;
-       &lt;/table&gt;
-   &lt;/div&gt;
-&lt;/form&gt;
-&lt;br/&gt;
-&lt;form&gt;
-   &lt;div class=&quot;coveo-form&quot;&gt;
-       &lt;div class=&quot;form-group&quot;&gt;
-           &lt;label for=&quot;field1&quot;&gt;
-               Field 1
-           &lt;/label&gt;
-           &lt;div class=&quot;value&quot;&gt;
-               &lt;input type=&quot;text&quot; name=&quot;field1&quot; placeholder=&quot;Field 1&quot; value=&quot;Field 1&quot;&gt;
-           &lt;/div&gt;
-       &lt;/div&gt;
-       &lt;div class=&quot;form-group&quot;&gt;
-           &lt;label for=&quot;field2&quot;&gt;
-               Field 2
-           &lt;/label&gt;
-           &lt;div class=&quot;value validated-input&quot;&gt;
-               &lt;input type=&quot;text&quot; name=&quot;field2&quot; placeholder=&quot;Field 2&quot;&gt;
-               &lt;div class=&quot;input-validation-error-details&quot;&gt;
-                   &lt;i class=&quot;coveo-sprites-misc-alert&quot;&gt;&lt;/i&gt;
-                   &lt;span class=&quot;input-validation-error-message&quot;&gt;Error message goes here!&lt;/span&gt;
-               &lt;/div&gt;
-           &lt;/div&gt;
-       &lt;/div&gt;
-       &lt;div class=&quot;form-group input-validation-error&quot;&gt;
-           &lt;label for=&quot;field3&quot;&gt;
-               Field 3
-           &lt;/label&gt;
-           &lt;div class=&quot;value validated-input&quot;&gt;
-               &lt;input type=&quot;text&quot; name=&quot;field3&quot; placeholder=&quot;Field 3&quot;&gt;
-               &lt;div class=&quot;input-validation-error-details&quot;&gt;
-                   &lt;i class=&quot;coveo-sprites-misc-alert&quot;&gt;&lt;/i&gt;
-                   &lt;span class=&quot;input-validation-error-message&quot;&gt;Error message goes here!&lt;/span&gt;
-               &lt;/div&gt;
-           &lt;/div&gt;
-       &lt;/div&gt;
-   &lt;/div&gt;
-&lt;/form&gt;</code></pre>
+                        <pre><code data-language="html">&lt;div class=&quot;filter-container pull-right&quot;&gt;
+ &lt;span class=&quot;filter&quot;&gt;
+     &lt;i class=&quot;coveo-sprites-misc-filter&quot;&gt;&lt;/i&gt;
+ &lt;/span&gt;
+ &lt;input type=&quot;text&quot; class=&quot;filterBox&quot;&gt;
+&lt;/div&gt;</code></pre>
                     </div>
                 </div>
             </section>

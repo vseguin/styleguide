@@ -6,7 +6,6 @@
     <title>Coveo Styleguide</title>
     <meta name="description" content=""/>
     <meta name="generator" content="kss-node"/>
-    <link rel="stylesheet" href="public/reset.css"/>
     <link rel="stylesheet" href="public/kss.css"/>
     <link rel="stylesheet" href="public/style.css"/>
     <!--[if lt IE 9]>
@@ -33,11 +32,19 @@
                     <li class="kss-menu-item"><a href="section-4.html"><span class="kss-ref">4</span><span
                             class="kss-name">Tables</span></a></li>
                     <li class="kss-menu-item"><a href="section-5.html"><span class="kss-ref">5</span><span
+                            class="kss-name">Controls</span></a></li>
+                    <li class="kss-menu-item"><a href="section-6.html"><span class="kss-ref">6</span><span
                             class="kss-name">Forms</span></a></li>
                 </ul>
                 <ul class="kss-menu-child">
                     <li class="kss-menu-item"><a href="#section-3.1"><span class="kss-ref">3.1</span><span
-                            class="kss-name">Buttons</span></a></li>
+                            class="kss-name">Button Tags</span></a></li>
+                    <li class="kss-menu-item"><a href="#section-3.2"><span class="kss-ref">3.2</span><span
+                            class="kss-name">Button Options</span></a></li>
+                    <li class="kss-menu-item"><a href="#section-3.3"><span class="kss-ref">3.3</span><span
+                            class="kss-name">Button Slim</span></a></li>
+                    <li class="kss-menu-item"><a href="#section-3.4"><span class="kss-ref">3.4</span><span
+                            class="kss-name">Buttons States</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -52,138 +59,78 @@
                 </div>
             </section>
             <section id="section-3.1" class="kss-section kss-depth-2">
-                <h1 class="kss-title"><span class="kss-ref">3.1</span> Buttons</h1>
-            </section>
-            <section id="section-3.1.1" class="kss-section kss-depth-3">
-                <h1 class="kss-title"><span class="kss-ref">3.1.1</span> Base Buttons</h1>
+                <h1 class="kss-title"><span class="kss-ref">3.1</span> Button Tags</h1>
+                <div class="kss-description">
+                    <p>Use the btn class on an <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> element.</p>
+
+                </div>
                 <div class="kss-modifier-block">
                     <div class="kss-modifier kss-modifier-original">
                         <div class="kss-modifier-example">
-                            <a class="btn {$modifiers}">Link Button</a>
-<button class="btn {$modifiers}">Button Element</button>
-                        </div>
-                    </div>
-                    <div class="kss-modifier">
-                        <div class="kss-modifier-head">
-                            <div class="kss-modifier-name">:hover</div>
-                            <div class="kss-modifier-description">
-                                <p>Highlight the button when hovered.</p>
-
-                            </div>
-                        </div>
-                        <div class="kss-modifier-example">
-                            <a class="btn pseudo-class-hover">Link Button</a>
-<button class="btn pseudo-class-hover">Button Element</button>
-                        </div>
-                    </div>
-                    <div class="kss-modifier">
-                        <div class="kss-modifier-head">
-                            <div class="kss-modifier-name">:disabled</div>
-                            <div class="kss-modifier-description">
-                                <p>Make the button change appearance to reflect it being disabled.</p>
-
-                            </div>
-                        </div>
-                        <div class="kss-modifier-example">
-                            <a class="btn pseudo-class-disabled">Link Button</a>
-<button class="btn pseudo-class-disabled">Button Element</button>
+                            <a class="btn">Link</a>
+<button type="button" class="btn">Button</button>
                         </div>
                     </div>
                     <div class="kss-markup">
-                        <pre><code data-language="html">&lt;a class=&quot;btn {$modifiers}&quot;&gt;Link Button&lt;/a&gt;
-&lt;button class=&quot;btn {$modifiers}&quot;&gt;Button Element&lt;/button&gt;</code></pre>
+                        <pre><code data-language="html">&lt;a class=&quot;btn&quot;&gt;Link&lt;/a&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Button&lt;/button&gt;</code></pre>
                     </div>
                 </div>
             </section>
-            <section id="section-3.1.2" class="kss-section kss-depth-3">
-                <h1 class="kss-title"><span class="kss-ref">3.1.2</span> Buttons Primary</h1>
+            <section id="section-3.2" class="kss-section kss-depth-2">
+                <h1 class="kss-title"><span class="kss-ref">3.2</span> Button Options</h1>
+                <div class="kss-description">
+                    <p>Use any of the available button classes to quickly create a styled button.</p>
+
+                </div>
                 <div class="kss-modifier-block">
                     <div class="kss-modifier kss-modifier-original">
                         <div class="kss-modifier-example">
-                            <a class="btn btn-primary {$modifiers}">Link Action</a>
-<button class="btn btn-primary {$modifiers}">Button Action</button>
-                        </div>
-                    </div>
-                    <div class="kss-modifier">
-                        <div class="kss-modifier-head">
-                            <div class="kss-modifier-name">:hover</div>
-                            <div class="kss-modifier-description">
-                                <p>Highlight the button when hovered.</p>
-
-                            </div>
-                        </div>
-                        <div class="kss-modifier-example">
-                            <a class="btn btn-primary pseudo-class-hover">Link Action</a>
-<button class="btn btn-primary pseudo-class-hover">Button Action</button>
-                        </div>
-                    </div>
-                    <div class="kss-modifier">
-                        <div class="kss-modifier-head">
-                            <div class="kss-modifier-name">:disabled</div>
-                            <div class="kss-modifier-description">
-                                <p>Make the button change appearance to reflect it being disabled.</p>
-
-                            </div>
-                        </div>
-                        <div class="kss-modifier-example">
-                            <a class="btn btn-primary pseudo-class-disabled">Link Action</a>
-<button class="btn btn-primary pseudo-class-disabled">Button Action</button>
+                            <button type="button" class="btn">Default</button>
+<button type="button" class="btn btn-primary">Action</button>
+<button type="button" class="btn btn-secondary">Info</button>
+<button type="button" class="btn btn-danger">Danger</button>
                         </div>
                     </div>
                     <div class="kss-markup">
-                        <pre><code data-language="html">&lt;a class=&quot;btn btn-primary {$modifiers}&quot;&gt;Link Action&lt;/a&gt;
-&lt;button class=&quot;btn btn-primary {$modifiers}&quot;&gt;Button Action&lt;/button&gt;</code></pre>
+                        <pre><code data-language="html">&lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Default&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Action&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Info&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;</code></pre>
                     </div>
                 </div>
             </section>
-            <section id="section-3.1.3" class="kss-section kss-depth-3">
-                <h1 class="kss-title"><span class="kss-ref">3.1.3</span> Buttons Secondary</h1>
+            <section id="section-3.3" class="kss-section kss-depth-2">
+                <h1 class="kss-title"><span class="kss-ref">3.3</span> Button Slim</h1>
+                <div class="kss-description">
+                    <p>Use the btn-slim class on an <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> element. Use any of the available button classes to quickly create a slim styled button.</p>
+
+                </div>
                 <div class="kss-modifier-block">
                     <div class="kss-modifier kss-modifier-original">
                         <div class="kss-modifier-example">
-                            <a class="btn btn-secondary {$modifiers}">Link Info</a>
-<button class="btn btn-secondary {$modifiers}">Button Info</button>
-                        </div>
-                    </div>
-                    <div class="kss-modifier">
-                        <div class="kss-modifier-head">
-                            <div class="kss-modifier-name">:hover</div>
-                            <div class="kss-modifier-description">
-                                <p>Highlight the button when hovered.</p>
-
-                            </div>
-                        </div>
-                        <div class="kss-modifier-example">
-                            <a class="btn btn-secondary pseudo-class-hover">Link Info</a>
-<button class="btn btn-secondary pseudo-class-hover">Button Info</button>
-                        </div>
-                    </div>
-                    <div class="kss-modifier">
-                        <div class="kss-modifier-head">
-                            <div class="kss-modifier-name">:disabled</div>
-                            <div class="kss-modifier-description">
-                                <p>Make the button change appearance to reflect it being disabled.</p>
-
-                            </div>
-                        </div>
-                        <div class="kss-modifier-example">
-                            <a class="btn btn-secondary pseudo-class-disabled">Link Info</a>
-<button class="btn btn-secondary pseudo-class-disabled">Button Info</button>
+                            <a class="btn-slim">Link</a>
+<button type="button" class="btn-slim">Default</button>
+<button type="button" class="btn-slim btn-primary">Action</button>
+<button type="button" class="btn-slim btn-secondary">Info</button>
+<button type="button" class="btn-slim btn-danger">Danger</button>
                         </div>
                     </div>
                     <div class="kss-markup">
-                        <pre><code data-language="html">&lt;a class=&quot;btn btn-secondary {$modifiers}&quot;&gt;Link Info&lt;/a&gt;
-&lt;button class=&quot;btn btn-secondary {$modifiers}&quot;&gt;Button Info&lt;/button&gt;</code></pre>
+                        <pre><code data-language="html">&lt;a class=&quot;btn-slim&quot;&gt;Link&lt;/a&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn-slim&quot;&gt;Default&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn-slim btn-primary&quot;&gt;Action&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn-slim btn-secondary&quot;&gt;Info&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn-slim btn-danger&quot;&gt;Danger&lt;/button&gt;</code></pre>
                     </div>
                 </div>
             </section>
-            <section id="section-3.1.4" class="kss-section kss-depth-3">
-                <h1 class="kss-title"><span class="kss-ref">3.1.4</span> Buttons Danger</h1>
+            <section id="section-3.4" class="kss-section kss-depth-2">
+                <h1 class="kss-title"><span class="kss-ref">3.4</span> Buttons States</h1>
                 <div class="kss-modifier-block">
                     <div class="kss-modifier kss-modifier-original">
                         <div class="kss-modifier-example">
-                            <a class="btn btn-danger {$modifiers}">Link Danger</a>
-<button class="btn btn-danger {$modifiers}">Button Danger</button>
+                            <button type="button" class="btn btn-primary {$modifiers}">Action</button>
                         </div>
                     </div>
                     <div class="kss-modifier">
@@ -195,8 +142,7 @@
                             </div>
                         </div>
                         <div class="kss-modifier-example">
-                            <a class="btn btn-danger pseudo-class-hover">Link Danger</a>
-<button class="btn btn-danger pseudo-class-hover">Button Danger</button>
+                            <button type="button" class="btn btn-primary pseudo-class-hover">Action</button>
                         </div>
                     </div>
                     <div class="kss-modifier">
@@ -208,13 +154,11 @@
                             </div>
                         </div>
                         <div class="kss-modifier-example">
-                            <a class="btn btn-danger pseudo-class-disabled">Link Danger</a>
-<button class="btn btn-danger pseudo-class-disabled">Button Danger</button>
+                            <button type="button" class="btn btn-primary pseudo-class-disabled">Action</button>
                         </div>
                     </div>
                     <div class="kss-markup">
-                        <pre><code data-language="html">&lt;a class=&quot;btn btn-danger {$modifiers}&quot;&gt;Link Danger&lt;/a&gt;
-&lt;button class=&quot;btn btn-danger {$modifiers}&quot;&gt;Button Danger&lt;/button&gt;</code></pre>
+                        <pre><code data-language="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary {$modifiers}&quot;&gt;Action&lt;/button&gt;</code></pre>
                     </div>
                 </div>
             </section>
